@@ -54,7 +54,8 @@
 }
 .what-we-do{
     background-color: #FAFAFA ;
-    margin-bottom: 20px;
+    padding: 20px;
+   
 }
 .what-we-do h1{
     font-family: "Cormorant SC", serif;
@@ -143,15 +144,15 @@ opacity: 0.86;
    transform: scale(1.01);
 }
 
-.carousel-section {
+.carousel-slide {
     position: relative;
 }
 
 .carousel-indicators {
     position: absolute;
-    margin-top: 200px;
+    bottom: -30px; 
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-65%); 
     display: flex;
     justify-content: center;
     padding-left: 0;
@@ -160,23 +161,26 @@ opacity: 0.86;
 }
 
 .carousel-indicators li {
-    width: 12px;
-    height: 12px;
+    min-width: 4px; 
+    min-height: 4px;
     border-radius: 50%;
     background-color: transparent;
     border: 2px solid transparent;
     margin: 0 5px;
     cursor: pointer;
-    background: url('../assets/icons/dot.svg') no-repeat center center; /* Replace with your icon path */
-    background-size: cover;
+    background: url('../assets/icons/dot.svg') no-repeat center center;
+    background-size: contain;
 }
 
 .carousel-indicators .active {
+    width: 18px; 
+    height:18px;
     background-color: transparent;
-    border: 2px solid #e74c3c;
-    background: url('../assets/icons/redDot.svg') no-repeat center center; /* Replace with your icon path */
-    background-size: cover;
+    border: 0.5px solid #e74c3c;
+    background: url('../assets/icons/redDot.svg') no-repeat center center;
+    background-size: contain;
 }
+
 .our-project h2{
 color: #FF3147;
 font-family: "Cormorant SC", serif;
